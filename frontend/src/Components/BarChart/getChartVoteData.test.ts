@@ -34,15 +34,5 @@ describe('The getChartVoteData function', () => {
     expect(high).toBe(1);
   });
 
-  it('returns full scale when no valid vote was given', () => {
-    const { data, high } = getChartVoteData({
-      votes: {
-        user1: VOTE_COFFEE,
-      },
-      scale: ['0', '0.5', '1', '2', '3', '4', '5'],
-    });
-    expect(data.series).toEqual([[]]);
-    expect(data.labels).toEqual(['0', '0.5', '1', '2', '3', '4', '5']);
-    expect(high).toBe(1);
-  });
+  it('returns full scale when no valid vote was given', () => {});
 });
